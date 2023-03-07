@@ -2,7 +2,7 @@
 //  main.cpp
 //  hw7A
 //
-//  Created by Hello on 4/1/21.
+//  Created by Owen Keating on 4/1/21.
 //
 
 #include <iostream>
