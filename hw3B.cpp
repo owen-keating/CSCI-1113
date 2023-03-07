@@ -2,7 +2,7 @@
 //  main.cpp
 //  hw3B
 //
-//  Created by Hello on 2/19/21.
+//  Created by Owen Keating on 2/19/21.
 //
 
 #include <iostream>
