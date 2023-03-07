@@ -1,6 +1,6 @@
 //
 //  main.cpp
-//  hw3B
+//  hw2B
 //
 //  Created by Owen Keating on 2/19/21.
 //
