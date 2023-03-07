@@ -2,41 +2,68 @@
 //  main.cpp
 //  hw3A
 //
-//  Created by Owen Keating on 2/19/21.
+//  Created by Hello on 2/26/21.
 //
 
 #include <iostream>
 #include <math.h>
+#include <vector>
+#include <string>
 using namespace std;
+
 
 int main(){
     
-    double investment, rate, withdrawal, balance;
-    double total_withdrawn = 0.0;
-    int years = 0;
-    cout << "Initial investment? ";
-    cin >> investment;
-    cout << "Yearly growth rate? ";
-    cin >> rate;
-    cout << "Yearly withdraw amount? ";
-    cin >> withdrawal;
-    cout << "Desired balance? " << endl;
-    cin >> balance;
-    while(investment<=balance){
-        years++;
-        investment = investment * (1 + rate);
-        if(withdrawal>=investment){
-            total_withdrawn+=investment;
-            investment = 0;
-            break;
-        }
-        else{
-            total_withdrawn = total_withdrawn + withdrawal;
-            investment-=withdrawal;
+    char a, b;
+    int month, day, year;
+    int count = 2;
+    cout << "Gimme dates!" << endl;
+    cin >> month >> a >> day >> b >> year;
+    vector<int> months(1);
+    months.at(0) = month;
+    vector<int> days(1);
+    days.at(0) = day;
+    while(month!=-1){
+        cin >> month;
+        if(month!=-1){
+            cin >> a >> day >> b >> year;
+            months.resize(count);
+            days.resize(count);
+            months.at(count-1) = month;
+            days.at(count-1) = day;
+            count++;
         }
     }
-    cout << "Years: " << years << endl;
-    cout << "Balance at end: " << investment << endl;
-    cout << "Amount withdrawn over period: " << total_withdrawn << endl;
+    int mcount = 0;
+    int max_month = months.at(0);
+    for(int i = 0; i<months.size(); i++){
+        int n = 0;
+        for(int j = 0; j<months.size(); j++){
+            if(months.at(j)==months.at(i)){
+                n++;
+            }
+        }
+        if(n>mcount){
+            mcount = n;
+            max_month = months.at(i);
+        }
+    }
+    int dcount = 0;
+    int max_day = days.at(0);
+    for(int i = 0; i<days.size(); i++){
+        int n = 0;
+        for(int j = 0; j<days.size(); j++){
+            if(days.at(j)==days.at(i)){
+                n++;
+            }
+        }
+        if(n>dcount){
+            dcount = n;
+            max_day = days.at(i);
+        }
+    }
+    
+    cout << "Most common day: " << endl << max_day << endl;
+    cout << "Most common birth month: " << endl << max_month;
     
 }
