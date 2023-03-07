@@ -1,8 +1,8 @@
 //
 //  main.cpp
-//  hw4B
+//  hw3B
 //
-//  Created by Hello on 3/11/21.
+//  Created by Owen Keating on 3/11/21.
 //
 
 #include <iostream>
