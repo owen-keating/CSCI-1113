@@ -2,13 +2,11 @@
 //  main.cpp
 //  hw5A
 //
-//  Created by Hello on 3/18/21.
+//  Created by Owen Keating on 3/18/21.
 //
 
 #include <iostream>
 using namespace std;
-
-int beta(int x);
 
 int alpha(int x){
     if(x==0){
