@@ -1,8 +1,8 @@
 //
 //  main.cpp
-//  hw2A
+//  hw3A
 //
-//  Created by Hello on 2/19/21.
+//  Created by Owen Keating on 2/19/21.
 //
 
 #include <iostream>
