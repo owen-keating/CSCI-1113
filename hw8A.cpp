@@ -2,7 +2,7 @@
 //  main.cpp
 //  hw8A
 //
-//  Created by AMY KEATING on 4/23/21.
+//  Created by Owen Keating on 4/23/21.
 //
 
 #include <iostream>
