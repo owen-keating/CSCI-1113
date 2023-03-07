@@ -2,7 +2,7 @@
 //  main.cpp
 //  hw2B
 //
-//  Created by Owen Keating on 2/12/21.
+//  Created by Hello on 2/12/21.
 //
 
 #include <iostream>
